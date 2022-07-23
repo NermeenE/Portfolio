@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  height: 0;
+  width: 0;
+}
+
+:root {
+  --Primary-font: 'IM Fell Great Primer', serif;
+
+  --bg-color: #000;
+  --txt-color: #fff;
+
+  --fs-h1: 3.5rem;
+  --fs-h2: 1.7rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 5rem;
+    --fs-h2: 3.2rem;
+    --fs-h3: 1.75rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--txt-color);
+  font-family: var(--Primary-font);
+  font-family: var(--fs-body);
+  margin: 0;
+  line-height: 1.6;
+}
+
+section {
+  padding: 5rem 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
