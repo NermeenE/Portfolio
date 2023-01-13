@@ -9,6 +9,7 @@
   "author": "Nermeen Elattar",
   "license": "ISC",
   "dependencies": {
+    "react-scroll": "^1.8.7",
     "sass": "^1.54.0"
   }
 }

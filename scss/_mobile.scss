@@ -1,0 +1,160 @@
+@include mediaXlrg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@include mediaLrg {
+  :root {
+    --fs-h1: 2.7rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1rem;
+  }
+
+  main {
+    &#about,
+    &#work,
+    &#contact {
+      h1 {
+        font-size: 2.7rem;
+        text-align: left;
+        width: 220px;
+      }
+
+      h2 {
+        width: 225px;
+      }
+    }
+
+    &#home {
+      .wrapper {
+        h2 {
+          top: 35%;
+        }
+      }
+    }
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@include mediaMed {
+  :root {
+    --fs-h1: 2rem;
+    --fs-h2: 1.2rem;
+    --fs-h3: 0.8rem;
+  }
+  main {
+    align-items: center;
+    text-align: center;
+
+    &#about,
+    &#work,
+    &#contact {
+      h1 {
+        font-size: 2.7rem;
+        text-align: left;
+        width: 220px;
+      }
+      h2 {
+        width: 251px;
+      }
+    }
+
+    &#home {
+      .wrapper {
+        h1 {
+          top: 39%;
+        }
+        h2 {
+          top: 45%;
+        }
+      }
+    }
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url('/dist/img/image.jpg');
+      width: 150px;
+      height: 150px;
+      background-size: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include mediaSmall {
+  :root {
+    --fs-h1: 1.3rem;
+    --fs-h2: 0.9rem;
+    --fs-h3: 0.6rem;
+  }
+
+  main {
+    padding: 2rem;
+
+    &#about,
+    &#work,
+    &#contact {
+      h1 {
+        font-size: 2.7rem;
+        text-align: left;
+        width: 220px;
+      }
+      h2 {
+        width: 245px;
+      }
+    }
+
+    &#home {
+      .wrapper {
+        h1 {
+          top: 41%;
+          left: 16%;
+        }
+      }
+    }
+  }
+  main #home h1 {
+    margin-top: 10vh;
+  }
+  main .lg-heading {
+    margin-top: 1rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .boxes div {
+    font-size: 1.5rem;
+  }
+}
